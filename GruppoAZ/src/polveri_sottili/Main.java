@@ -1,5 +1,9 @@
 package polveri_sottili;
 
+/**
+ * @author simo
+ */
+
 import IOUtils.IOUtils;
 
 public class Main {
