@@ -24,8 +24,7 @@ public class CartaAlta {
 			
 			System.out.println("\nla seconda carta estratta è: "+carta_estratta[1].toString());
 			
-			
-			stampa_stato(modifica_budget(controlla_vincita()));
+			controlla_vincita();
 			
 			System.out.println("\nIL TUO BUDGET E': "+String.valueOf(budget));
 			
@@ -35,35 +34,21 @@ public class CartaAlta {
 				System.out.println("HAI ESAURITO IL TUO BUDGET!");
 		}
 	}
-	
-	private void stampa_stato(int stato)
-	{
-		if(stato==0)
-			System.out.println("hai perso!");
-		else if(stato==1)
-			System.out.println("hai vinto!");
-		else 
-			System.out.println("pareggio!");
-	}
-	
-	private int modifica_budget(int stato)
-	{
-		if(stato==0)
-			budget-=puntata;
-			
-		else if(stato==1)
-			budget+=puntata;
-		return stato;
-	}
-	
-	private int controlla_vincita()
+
+	private void controlla_vincita()
 	{
 		if(carta_estratta[1].getValore()<carta_estratta[0].getValore())
-			return 0;
+		{
+			budget-=puntata;
+			System.out.println("hai perso!");
+		}
 		else if(carta_estratta[1].getValore()>carta_estratta[0].getValore())
-			return 1;
+		{
+			budget+=puntata;
+			System.out.println("hai vinto!");
+		}
 		else
-			return -1;
+			System.out.println("pareggio!");
 	}
 	
 	private void puntata()

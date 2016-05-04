@@ -1,7 +1,5 @@
 package CartaAlta;
 
-import IOUtils.*;
-
 public class Main {
 
 	public static void main(String[] args) {
