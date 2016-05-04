@@ -16,5 +16,14 @@ public class Carta {
 		this.seme=seme;
 		this.valore=valore;
 	}
+	@Override
+	public String toString() {
+		return "Carta [seme=" + seme + ", valore=" + valore+"]";
+	}
+	public int getValore() {
+		return valore;
+	}
+	
+	
 	
 }

@@ -22,6 +22,11 @@ public class Mazzo {
 	
 	public Carta cartaCasuale()
 	{
-		return mazzo.get(IOUtils.estraiIntero(0, 52));
+		return mazzo.get(IOUtils.estraiIntero(0, 51));
+	}
+	public Carta cartaCasualeSenzaReimmissione()
+	{
+		
+		return mazzo.get(IOUtils.estraiIntero(0, 51));
 	}
 }
