@@ -15,15 +15,17 @@ public class ArchivioCD {
 		elencoCD.add(cd);
 	}
 	
-	public boolean cercaCD(CD cd) {
+	public int cercaCD(CD cd) {
 		for(int i=0; i<elencoCD.size(); i++) {
 			if(cd.getAutore().equals(elencoCD.get(i).getAutore()) && cd.getTitolo().equals(elencoCD.get(i).getTitolo()))
 			{
-				return true;
+				return i;
 			}			
 		}
-		return false;
+		return -1;
 	}
+	
+	
 	
 	public CD visualizzareCD(int i) {
 		return elencoCD.get(i);

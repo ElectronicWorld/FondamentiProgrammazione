@@ -40,9 +40,10 @@ public class CD {
 	public String toString() {
 		return "CD [Titolo=" + titolo + ", Autore=" + autore + ", Numero Brani=" + elencoBrani.size()+ "]";
 	}
-	
-	
-	
-	
-	
+
+	public Vector<Brano> getElencoBrani() {
+		return elencoBrani;
+	}
+
+
 }

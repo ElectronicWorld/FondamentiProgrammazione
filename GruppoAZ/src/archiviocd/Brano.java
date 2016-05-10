@@ -2,14 +2,14 @@ package ArchivioCD;
 
 public class Brano {
 	private String titolo; 
-	private float durata;
+	private double durata;
 	
 	public Brano() {
 		this.titolo = "";
-		this.durata = 0.0f;
+		this.durata = 0.0d;
 	}
 	
-	public Brano(String titolo, float durata) {
+	public Brano(String titolo, double durata) {
 		this.titolo = titolo;
 		this.durata = durata;
 	}
@@ -22,15 +22,15 @@ public class Brano {
 		this.titolo = titolo;
 	}
 
-	public float getDurata() {
+	public Double getDurata() {
 		return durata;
 	}
 
-	public void setDurata(float durata) {
+	public void setDurata(Double durata) {
 		this.durata = durata;
 	}
 
-	@Override
+	@Override 
 	public String toString() {
 		return "Brano [titolo=" + titolo + ", durata=" + durata + "]";
 	}	

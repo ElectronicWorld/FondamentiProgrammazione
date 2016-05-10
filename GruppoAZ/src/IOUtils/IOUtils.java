@@ -18,8 +18,9 @@ public class IOUtils {
 	  
 	  public static String leggiStringa (String messaggio)
 	  {
+		  scanner = new Scanner(System.in);
 		  System.out.print(messaggio);
-		  return scanner.next();
+		  return scanner.nextLine();
 	  }
 	  
 	  public static String leggiStringaNonVuota(String messaggio)
